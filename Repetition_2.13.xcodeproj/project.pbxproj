@@ -12,7 +12,6 @@
 		C3C079432924CB7F006F95F0 /* Repetition_2_13.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3C079412924CB7F006F95F0 /* Repetition_2_13.xcdatamodeld */; };
 		C3C079452924CB80006F95F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3C079442924CB80006F95F0 /* Assets.xcassets */; };
 		C3C079482924CB80006F95F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C079462924CB80006F95F0 /* LaunchScreen.storyboard */; };
-		C3C079522924FEA2006F95F0 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C079512924FEA2006F95F0 /* NewTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +22,6 @@
 		C3C079442924CB80006F95F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3C079472924CB80006F95F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3C079492924CB80006F95F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C3C079512924FEA2006F95F0 /* NewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +56,6 @@
 			children = (
 				C3C079382924CB7F006F95F0 /* AppDelegate.swift */,
 				C3C0793C2924CB7F006F95F0 /* TaskListViewController.swift */,
-				C3C079512924FEA2006F95F0 /* NewTaskViewController.swift */,
 				C3C079442924CB80006F95F0 /* Assets.xcassets */,
 				C3C079462924CB80006F95F0 /* LaunchScreen.storyboard */,
 				C3C079492924CB80006F95F0 /* Info.plist */,
@@ -139,7 +136,6 @@
 			files = (
 				C3C0793D2924CB7F006F95F0 /* TaskListViewController.swift in Sources */,
 				C3C079392924CB7F006F95F0 /* AppDelegate.swift in Sources */,
-				C3C079522924FEA2006F95F0 /* NewTaskViewController.swift in Sources */,
 				C3C079432924CB7F006F95F0 /* Repetition_2_13.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
