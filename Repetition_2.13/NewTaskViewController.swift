@@ -7,16 +7,20 @@
 
 import UIKit
 import CoreData
-
+// MARK: - Setup second view NewTaskViewController
 class NewTaskViewController: UIViewController {
     
+    var delegate: TaskListViewControllerDelegate?
+    
+    private let content = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    // MARK: - Set text field
     private lazy var taskTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "New Task"
         textField.borderStyle = .roundedRect
         return textField
     }()
-    
+    // MARK: - Set buttons
     private lazy var saveButton: UIButton = {
         let button = setButton(
             color: UIColor(
@@ -44,20 +48,20 @@ class NewTaskViewController: UIViewController {
         button.addTarget(self, action: #selector(cancel), for: .touchUpInside)
         return button
     }()
-    
+    // MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupSubviews(subviews: taskTextField, saveButton, cancelButton)
         setConstraints()
     }
-    
+    // MARK: - Add subviews on the screen
     private func setupSubviews(subviews: UIView...) {
         subviews.forEach { subview in
             view.addSubview(subview)
         }
     }
-    
+    // MARK: - Set constraints
     private func setConstraints() {
         taskTextField.translatesAutoresizingMaskIntoConstraints = false
         
@@ -83,7 +87,29 @@ class NewTaskViewController: UIViewController {
             cancelButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40)
         ])
     }
+    // MARK: - Button actions
+    @objc private func save() {
+        guard let entityDescription = NSEntityDescription.entity(forEntityName: "Task", in: content) else { return }
+        guard let task = NSManagedObject(entity: entityDescription, insertInto: content) as? Task else { return }
+        task.title = taskTextField.text
+        
+        if content.hasChanges {
+            do {
+                try content.save()
+            } catch let error {
+                print(error.localizedDescription)
+            }
+        }
+        delegate?.reloadData()
+        dismiss(animated: true)
+    }
     
+    @objc private func cancel() {
+        dismiss(animated: true)
+    }
+}
+// MARK: - Custom class for button
+extension NewTaskViewController {
     private func setButton(color: UIColor, title: String) -> UIButton {
         let button = UIButton()
         button.backgroundColor = color
@@ -92,13 +118,5 @@ class NewTaskViewController: UIViewController {
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 5
         return button
-    }
-    
-    @objc private func save() {
-        
-    }
-    
-    @objc private func cancel() {
-        dismiss(animated: true)
     }
 }

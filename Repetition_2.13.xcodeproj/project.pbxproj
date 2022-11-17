@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C3C079392924CB7F006F95F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C079382924CB7F006F95F0 /* AppDelegate.swift */; };
-		C3C0793D2924CB7F006F95F0 /* TastListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C0793C2924CB7F006F95F0 /* TastListViewController.swift */; };
+		C3C0793D2924CB7F006F95F0 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C0793C2924CB7F006F95F0 /* TaskListViewController.swift */; };
 		C3C079432924CB7F006F95F0 /* Repetition_2_13.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3C079412924CB7F006F95F0 /* Repetition_2_13.xcdatamodeld */; };
 		C3C079452924CB80006F95F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3C079442924CB80006F95F0 /* Assets.xcassets */; };
 		C3C079482924CB80006F95F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C079462924CB80006F95F0 /* LaunchScreen.storyboard */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		C3C079352924CB7F006F95F0 /* Repetition_2.13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repetition_2.13.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3C079382924CB7F006F95F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C3C0793C2924CB7F006F95F0 /* TastListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastListViewController.swift; sourceTree = "<group>"; };
+		C3C0793C2924CB7F006F95F0 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		C3C079422924CB7F006F95F0 /* Repetition_2_13.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Repetition_2_13.xcdatamodel; sourceTree = "<group>"; };
 		C3C079442924CB80006F95F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3C079472924CB80006F95F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				C3C079382924CB7F006F95F0 /* AppDelegate.swift */,
-				C3C0793C2924CB7F006F95F0 /* TastListViewController.swift */,
+				C3C0793C2924CB7F006F95F0 /* TaskListViewController.swift */,
 				C3C079512924FEA2006F95F0 /* NewTaskViewController.swift */,
 				C3C079442924CB80006F95F0 /* Assets.xcassets */,
 				C3C079462924CB80006F95F0 /* LaunchScreen.storyboard */,
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3C0793D2924CB7F006F95F0 /* TastListViewController.swift in Sources */,
+				C3C0793D2924CB7F006F95F0 /* TaskListViewController.swift in Sources */,
 				C3C079392924CB7F006F95F0 /* AppDelegate.swift in Sources */,
 				C3C079522924FEA2006F95F0 /* NewTaskViewController.swift in Sources */,
 				C3C079432924CB7F006F95F0 /* Repetition_2_13.xcdatamodeld in Sources */,
