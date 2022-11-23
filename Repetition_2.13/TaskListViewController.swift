@@ -68,7 +68,7 @@ class TaskListViewController: UITableViewController {
             )
         }
     }
-    
+    // MARK: - Get data
     private func getData() {
         StorageManager.shared.fetchData { result in
             switch result {

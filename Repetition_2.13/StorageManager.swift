@@ -45,12 +45,12 @@ class StorageManager {
         completion(task)
         saveContext()
     }
-    
+    // MARK: - Edit data
     func edit(task: Task, newName: String) {
         task.title = newName
         saveContext()
     }
-    
+    // MARK: - Delete data
     func delete(task: Task) {
         viewContext.delete(task)
         saveContext()
