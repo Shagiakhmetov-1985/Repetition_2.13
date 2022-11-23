@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3602A01292CEC5400245EDB /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3602A00292CEC5400245EDB /* StorageManager.swift */; };
+		C391A854292E16CF0012F0EA /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C391A853292E16CF0012F0EA /* AlertController.swift */; };
 		C3C079392924CB7F006F95F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C079382924CB7F006F95F0 /* AppDelegate.swift */; };
 		C3C0793D2924CB7F006F95F0 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C0793C2924CB7F006F95F0 /* TaskListViewController.swift */; };
 		C3C079432924CB7F006F95F0 /* Repetition_2_13.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3C079412924CB7F006F95F0 /* Repetition_2_13.xcdatamodeld */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C3602A00292CEC5400245EDB /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		C391A853292E16CF0012F0EA /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		C3C079352924CB7F006F95F0 /* Repetition_2.13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repetition_2.13.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3C079382924CB7F006F95F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3C0793C2924CB7F006F95F0 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 			children = (
 				C3C079382924CB7F006F95F0 /* AppDelegate.swift */,
 				C3C0793C2924CB7F006F95F0 /* TaskListViewController.swift */,
+				C3602A00292CEC5400245EDB /* StorageManager.swift */,
+				C391A853292E16CF0012F0EA /* AlertController.swift */,
 				C3C079442924CB80006F95F0 /* Assets.xcassets */,
 				C3C079462924CB80006F95F0 /* LaunchScreen.storyboard */,
 				C3C079492924CB80006F95F0 /* Info.plist */,
@@ -135,8 +141,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3C0793D2924CB7F006F95F0 /* TaskListViewController.swift in Sources */,
+				C391A854292E16CF0012F0EA /* AlertController.swift in Sources */,
 				C3C079392924CB7F006F95F0 /* AppDelegate.swift in Sources */,
 				C3C079432924CB7F006F95F0 /* Repetition_2_13.xcdatamodeld in Sources */,
+				C3602A01292CEC5400245EDB /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
